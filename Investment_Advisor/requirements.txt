@@ -1,0 +1,8 @@
+streamlit
+langchain
+langgraph
+langchain-groq
+langchain-community
+yfinance
+python-dotenv
+google-search-results

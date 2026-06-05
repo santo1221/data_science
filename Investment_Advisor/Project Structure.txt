@@ -1,0 +1,5 @@
+agentic_advisor_project/
+├── .env
+├── requirements.txt
+├── workflow.py
+└── app.py
