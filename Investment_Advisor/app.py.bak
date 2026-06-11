@@ -15,7 +15,7 @@ with st.sidebar:
     st.header("Investor Profile")
     
     income = st.number_input(
-        "Income (₹)", 
+        "Investment Income (₹)", 
         min_value=100000, 
         max_value=10000000, 
         value=4500000, 
