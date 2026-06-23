@@ -93,3 +93,15 @@ if generate_btn:
 else:
     # Default landing screen
     st.info("👈 Please enter your financial profile in the sidebar and click **Generate Strategy** to receive your AI-tailored investment report.")
+
+# --- ADDED FOOTER SECTION ---
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; color: gray; font-size: small;'>
+        <p style='margin-bottom: 2px;'>Prepared by: AI Agent as Senior Investment Advisor</p>
+        <p style='margin-top: 0px;'>Disclaimer: This report is for informational purposes only and does not constitute an offer or solicitation to buy or sell any securities. Investment decisions should be made in consultation with your personal financial advisor, taking into account your individual circumstances, risk tolerance, and investment horizon.</p>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
