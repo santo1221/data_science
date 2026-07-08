@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("<h1 style='color:blue;'>Agentic AI Investment Advisor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:blue;'>Agentic AI Investment Advisor by Santosh Jadhav</h1>", unsafe_allow_html=True)
 
 # Define Sidebar Inputs
 with st.sidebar:
