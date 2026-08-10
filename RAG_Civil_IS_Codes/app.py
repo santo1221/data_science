@@ -48,7 +48,7 @@ def load_rag_retriever():
     Loads and caches the heavy vectorstore, embedding model, 
     and local docstore connection to prevent reloading on every rerun.
     """
-    parent_store_dir = "./parent_docs"
+    parent_store_dir = "./RAG_Civil_IS_Codes/parent_docs"
     
     if not os.path.exists(parent_store_dir):
         st.error(f"Directory '{parent_store_dir}' not found. Please ensure parent documents exist.")
