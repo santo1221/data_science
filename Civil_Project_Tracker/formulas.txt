@@ -1,0 +1,157 @@
+=Master_Data!N2 - WEEKDAY(Master_Data!N2,2) + 1
+
+
+
+
+=EOMONTH(Master_Data!N2,-1)+1
+
+
+=IF(Master_Data!J2="","",EOMONTH(Master_Data!J2,-1)+1)
+
+
+
+=IF(Master_Data!N2="","",Master_Data!N2 - WEEKDAY(Master_Data!N2,2) + 1)
+
+
+IF(Master_Data!H2="","",
+
+=B2+7-WEEKDAY(B2,2)+1
+
+
+=COUNTA(UNIQUE(FILTER(A2:A100, B2:B100=E2)))
+
+=COUNTA(UNIQUE(FILTER(DRG_Status!A2:DRG_Status!A100000, (DRG_Status!B2:DRG_Status!B100000=F1) * (DRG_Status!C2:DRG_Status!C100000=F3) )))
+
+
+=COUNTA(UNIQUE(FILTER(DRG_Status!A2:DRG_Status!A100000,  (DRG_Status!C2:DRG_Status!C100000=F3) * (DRG_Status!B2:DRG_Status!B100000=F1)  )))
+
+S_Curve_Data!G3
+
+In the attached Excel file, I want a formula in "S_Curve_Data!G3" cell to count number of unique "DRG ID" of sheet DRG_Status "DRG_Status!A2:A100000" 
+Based on following filter criteria 
+filtering DRG_Status!C2:C100000 equals to date value in S_Curve_Data!F3 and DRG_Status!B2:B100000 equals to value equals to "Structural"
+
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$C$2:$C$100000=S_Curve_Data!F3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$F$1)
+)),0)/$G$1
+
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$F$2:$F$100000=S_Curve_Data!F3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$F$1)
+)),0)/$G$1
+
+
+
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$F$2:$F$100000=S_Curve_Data!M3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$M$1)
+)),0)/$N$1
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$F$2:$F$100000=S_Curve_Data!T3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$T$1)
+)),0)/$U$1
+
+
+#########################################################################################
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$G$2:$G$100000=S_Curve_Data!AA3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AA$1)
+)),0)/$AB$1
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$H$2:$H$100000=S_Curve_Data!AA3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AA$1)
+)),0)/$AB$1
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$I$2:$I$100000=S_Curve_Data!AA3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AA$1)
+)),0)/$AB$1
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$J$2:$J$100000=S_Curve_Data!AA3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AA$1)
+)),0)/$AB$1
+
+
+
+#########################################################################################
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$G$2:$G$100000=S_Curve_Data!AH3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AH$1)
+)),0)/$AI$1
+
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$H$2:$H$100000=S_Curve_Data!AH3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AH$1)
+)),0)/$AI$1
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$I$2:$I$100000=S_Curve_Data!AH3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AH$1)
+)),0)/$AI$1
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$J$2:$J$100000=S_Curve_Data!AH3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AH$1)
+)),0)/$AI$1
+
+
+
+#########################################################################################
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$G$2:$G$100000=S_Curve_Data!AO3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AO$1)
+)),0)/$AP$1
+
+
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$H$2:$H$100000=S_Curve_Data!AO3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AO$1)
+)),0)/$AP$1
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$I$2:$I$100000=S_Curve_Data!AO3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AO$1)
+)),0)/$AP$1
+
+=IFERROR(ROWS(FILTER(
+   DRG_Status!$A$2:$A$100000,
+   (DRG_Status!$J$2:$J$100000=S_Curve_Data!AO3) *
+   (DRG_Status!$B$2:$B$100000=S_Curve_Data!$AO$1)
+)),0)/$AP$1
