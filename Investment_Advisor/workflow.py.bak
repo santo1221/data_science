@@ -36,7 +36,7 @@ serper_search = GoogleSerperRun(
 # --- 1. Profiler Agent ---
 def profiler_agent(state: InvestorState) -> InvestorState:
     prompt = ChatPromptTemplate.from_messages([
-        ("system", "Determine Indian asset allocation (JSON) for: Equity_Stocks, Equity_MF, Debt, Gold, Silver, Gold ETF, Silver ETF."),
+        ("system", "Determine Indian asset allocation (JSON) for: Equity_Stocks, Equity_MF, Debt, Gold."),
         ("user", "Age: {age}, Risk: {risk_appetite}, Income: {income}, Loss_tolerance: {loss_tolerance}")
     ])
     chain = prompt | llm
@@ -58,7 +58,7 @@ def researcher_agent(state: InvestorState) -> InvestorState:
     # Dynamically determine tickers using an LLM call
     ticker_prompt = ChatPromptTemplate.from_messages([
         ("system", """You are an expert Indian stock market quantitative analyst. 
-        Based on the user's risk appetite, output a comma-separated list of 4-5 highly relevant NSE stock ticker symbols. 
+        Based on the user's risk appetite, output a comma-separated list of 3-4 highly relevant NSE stock ticker symbols. 
         You MUST append '.NS' to every ticker (e.g., RELIANCE.NS, TCS.NS). 
         - For High risk/Speculative: Choose fundamentally strong Small-Cap stocks.
         - For Moderate risk: Choose high-growth Mid-Cap stocks.
