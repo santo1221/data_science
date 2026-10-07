@@ -31,6 +31,11 @@ st.set_page_config(
 )
 
 st.title("🏗️ IS 800:2007 Steel Design Assistant")
+# Custom Title (Large font)
+st.markdown(
+    '<h1 style="font-size: 50px; color: #FF4B4B; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design Assistant</h1>', 
+    unsafe_allow_html=True
+)
 st.subheader("Concept by Smita Jadhav (Vasumanthan Pvt. Ltd)")
 st.caption("Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.")
 

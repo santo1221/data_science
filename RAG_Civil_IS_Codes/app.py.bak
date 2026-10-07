@@ -31,7 +31,7 @@ st.set_page_config(
 )
 
 st.title("🏗️ IS 800:2007 Steel Design Assistant")
-st.subheader("Developed by Smita Jadhav")
+st.subheader("Concept by Smita Jadhav (Vasumanthan Pvt. Ltd)")
 st.caption("Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.")
 
 # Ensure keys are present in the environment before proceeding
