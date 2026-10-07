@@ -30,14 +30,24 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🏗️ IS 800:2007 Steel Design Assistant")
 # Custom Title (Large font)
 st.markdown(
-    '<h1 style="font-size: 50px; color: #FF4B4B; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design Assistant</h1>', 
+    '<h1 style="font-size: 50px; color: #0404DE; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design Assistant</h1>', 
     unsafe_allow_html=True
 )
-st.subheader("Concept by Smita Jadhav (Vasumanthan Pvt. Ltd)")
-st.caption("Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.")
+
+# Custom Subheader (Medium font)
+st.markdown(
+    '<p style="font-size: 25px; font-weight: bold; color: #050505;">Concept by Smita Jadhav (Vasumanthan Pvt. Ltd)</p>', 
+    unsafe_allow_html=True
+)
+
+# Custom Caption (Small font)
+st.markdown(
+    '<p style="font-size: 12px; color: gray; font-style: italic;">Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.</p>', 
+    unsafe_allow_html=True
+)
+
 
 # Ensure keys are present in the environment before proceeding
 if not os.environ.get("OPENROUTER_API_KEY") or not os.environ.get("PINECONE_API_KEY"):
