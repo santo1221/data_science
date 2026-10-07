@@ -30,10 +30,9 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🏗️ IS 800:2007 Steel Design Assistant")
 # Custom Title (Large font)
 st.markdown(
-    '<h1 style="font-size: 50px; color: #FF4B4B; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design Assistant</h1>', 
+    '<h1 style="font-size: 50px; color: #0404DE; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design Assistant</h1>', 
     unsafe_allow_html=True
 )
 st.subheader("Concept by Smita Jadhav (Vasumanthan Pvt. Ltd)")
