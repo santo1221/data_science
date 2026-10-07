@@ -32,7 +32,7 @@ st.set_page_config(
 
 # Custom Title (Large font)
 st.markdown(
-    '<h1 style="font-size: 50px; color: #0404DE; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design Assistant</h1>', 
+    '<h1 style="font-size: 50px; color: #0404DE; font-family: sans-serif;">🏗️ IS 800:2007 Steel Design AI Assistant</h1>', 
     unsafe_allow_html=True
 )
 
@@ -44,7 +44,7 @@ st.markdown(
 
 # Custom Caption (Small font)
 st.markdown(
-    '<p style="font-size: 15px; color: black; font-style: italic;">Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.</p>', 
+    '<p style="font-size: 16px; color: black; font-style: italic;">Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.</p>', 
     unsafe_allow_html=True
 )
 
