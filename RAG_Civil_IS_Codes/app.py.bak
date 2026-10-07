@@ -44,7 +44,7 @@ st.markdown(
 
 # Custom Caption (Small font)
 st.markdown(
-    '<p style="font-size: 15px; color: black; font-style: italic;">Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.</p>', 
+    '<p style="font-size: 16px; color: black; font-style: italic;">Ask technical questions regarding structural engineering design, calculations, and IS 800:2007 compliance.</p>', 
     unsafe_allow_html=True
 )
 
